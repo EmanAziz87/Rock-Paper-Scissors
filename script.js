@@ -15,15 +15,24 @@ let playerScore = 0;
 let computerScore = 0;
 
 function runGame() {
+  if (playerScore === 5 || computerScore === 5){
+    return;
+  }
   document.querySelector('.results').textContent = gameLogic(playerSelection, computerPlay());
   document.querySelector('.playerScore').textContent = playerScore;
   document.querySelector('.computerScore').textContent = computerScore;
+  if (playerScore === 5) {
+    document.querySelector('.results').textContent = "You Won The Game!"
+  } else if (computerScore === 5) {
+    document.querySelector('.results').textContent = "You Lost The Game!"
+  }
 }
 
 function gameLogic(playerSelection, computerSelection) {
   const yourSelection = playerSelection.toLowerCase();
-  console.log(`player selection: ${yourSelection}`);
-  console.log(`computer selection: ${computerSelection}`);
+  document.querySelector('.player-choice').textContent = `Player Choice: ${yourSelection}`;
+  document.querySelector('.computer-choice').textContent = `Computer Choice: ${computerSelection}`;
+
   if (yourSelection === computerSelection) {
     return "It's a Draw!";
   } else if (yourSelection === "rock" && computerSelection === "scissors") {
@@ -55,11 +64,6 @@ function gameLogic(playerSelection, computerSelection) {
   }
 }
 
-function roundIncrease() {
-  i++;
-  return document.querySelector('.round').textContent = i;
-}
-
 
 let i = 0;
 let playerSelection = '';
@@ -72,26 +76,21 @@ buttons.forEach((button) => {
     if (button.textContent === "Rock") {
       playerSelection = button.textContent;
       runGame();
-      roundIncrease();
     } else if (button.textContent === "Paper") {
       playerSelection = button.textContent;
       runGame();
-      roundIncrease();
     } else if (button.textContent === "Scissors"){
       playerSelection = button.textContent;
       runGame();
-      roundIncrease();
     }
   });
 });
 
-/*
-if (playerScore > computerScore) {
-  document.querySelector('.game-results').textContent = "Congrats, You Won The Game!";
-} else if (computerScore > playerScore) {
-  document.querySelector('.game-results').textContent = "Feel Good About Yourself? Why You Losin?";
-}
-*/ 
+
+
+ 
+
+
     
   
 

@@ -4,21 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> 
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div>
-      <div>player Score</div>
-      <div class="playerScore">0</div>
-      <div>computer Score</div>
-      <div class="computerScore">0</div>
-      <div class="results">results</div>
-      <div class="round"></div>
+    <div class="container">
+      <p class="goal">The First to 5 Points Wins</p>
+      <div class="score-container">
+        <div class="playerScore-container">
+          <div class="playerScore-text">Player Score</div>
+          <div class="playerScore">0</div>
+        </div>
+        <div class="computerScore-container">
+          <div class="computerScore-text">Computer Score</div>
+          <div class="computerScore">0</div>
+        </div>
+      </div>
+      
+      <div class="results">Who Will Win?</div>
+  
+      <div class="buttons">
+        <button class="button-rock">Rock</button>
+        <button class="button-paper">Paper</button>
+        <button class="button-scissors">Scissors</button>
+      </div>
+        <div class="choice-container">
+          <div class="player-choice">Player Choice: --</div>
+          <div class="computer-choice">Player Choice: --</div>
+        </div>
+        
     </div>
-    <button class="button-rock">Rock</button>
-    <button class="button-paper">Paper</button>
-    <button class="button-scissors">Scissors</button>
-    <div class="game-results">Who Will Win?</div>
   </body>
 </html>
