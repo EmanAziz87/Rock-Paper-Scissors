@@ -6,5 +6,5 @@ The computer needed to generate a random choice of either rock, paper, or scisso
 
 I also can't believe I did not start using git and github earlier as it is an extremely beneficial tool. I familiarized myself with branches, how to work on one and then merge it to your main repository and then push it to github. 
 
-Despite being a very basic project I really enjoyed working on it and I am proud of all the moments I got stuck and was able to find a solution (albeit, with the help of google many times). I am looking forward to be able to build off of these skills moving forward and create bigger and more ambitious projects.
+Despite being a very basic project I really enjoyed working on it and I am proud of all the moments I got stuck and was able to find a solution (albeit, with the help of google many times). I'm excited moving forward, as I have a lot of ideas for more ambitious projects and I feel that the skills I learnt through this project was a great foundation for the future!.
 
